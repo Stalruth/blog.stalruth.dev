@@ -1,0 +1,21 @@
+sup {
+  background-color: unset;
+  border-radius: unset;
+  color: unset;
+  padding: unset;
+}
+
+aside {
+  width: 40%;
+  float: right;
+  border-left: 0.2rem solid var(--color-accent);
+  padding-left: 0.5rem;
+  margin: 0.5rem;
+}
+
+blockquote {
+  font-size: large;
+  margin: 0.5rem auto;
+  padding: 1rem;
+}
+
