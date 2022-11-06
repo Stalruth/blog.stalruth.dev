@@ -1,3 +1,37 @@
+:root {
+  --color-link: #2222ff;
+  --color-accent: #9211ee15;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: underline;
+}
+
+blockquote {
+  font-size: large;
+  margin: 0.5rem auto;
+  padding: 1rem;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+code {
+  font-size: 0.75rem;
+}
+
+footer, header, main {
+  width: calc(100% - 2rem);
+}
+
+main {
+  flex-grow: 1;
+}
+
 sup {
   background-color: unset;
   border-radius: unset;
@@ -5,17 +39,7 @@ sup {
   padding: unset;
 }
 
-aside {
-  width: 40%;
-  float: right;
-  border-left: 0.2rem solid var(--color-accent);
-  padding-left: 0.5rem;
-  margin: 0.5rem;
-}
-
-blockquote {
-  font-size: large;
-  margin: 0.5rem auto;
-  padding: 1rem;
+h1, h2, h3, h4, h5, h6 {
+  border-bottom: 2px solid var(--color-accent);
 }
 

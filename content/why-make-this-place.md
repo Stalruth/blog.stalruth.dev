@@ -5,10 +5,7 @@ There's a very common refrain about the state of the modern internet:
 > I'm old enough to remember when the Internet wasn't a group of five websites,
 > each consisting of screenshots of the other four.
 >
-> [Tom Eastman], [source][tweet source]
-
-[Tom Eastman]: https://tom.eastman.nz/
-[tweet source]: https://twitter.com/tveastman/status/1069674780826071040
+> <footer><a href="https://tom.eeastman.nz">Tom Eastman</a>, <a href="https://twitter.com/tveastman/status/1069674780826071040">source</a></footer>
 
 What happens when one of those four websites dies?  Vine dying was a major
 cultural event - what's going to happen when Twitter bites the dust, with so
