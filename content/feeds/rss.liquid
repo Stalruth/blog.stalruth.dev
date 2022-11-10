@@ -1,0 +1,31 @@
+---
+eleventyExcludeFromCollections: true
+permalink: feeds/rss.xml
+---
+<rss version="2.0">
+  <channel>
+    <title>Stalruth's Longpost Emporium</title>
+    <link>https://blog.stalruth.dev</link>
+    <description>Stuart Rutherford's Longer Posts</description>
+
+    <language>en-AU</language>
+    <webMaster>squirrel96@live.co.uk (Stuart Rutherford)</webMaster>
+    <pubDate>{{ collections.all | getNewestCollectionItemDate | dateToRfc822 }}</pubDate>
+    <generator>https://eleventy.dev/</generator>
+    <docs>https://validator.w3.org/feed/docs/rs2.html</docs>
+    <ttl>60</ttl>
+
+    {%- for post in collections.all reversed -%}
+    <item>
+      <title>{{ post.data.title }}</title>
+      <link>{{ post.url }}</link>
+      <description>{{ post.data.description }}</description>
+
+      <guid>{{ post.url }}</guid>
+      <pubDate>{{ post.date | dateToRfc822 }}</pubDate>
+      <source url="https://blog.stalruth.dev/feeds/rss.xml">Stalruth's Longpost Emporium</source>
+    </item>
+    {%- endfor -%}
+  </channel>
+</rss>
+
