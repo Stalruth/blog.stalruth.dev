@@ -2,10 +2,11 @@
 eleventyExcludeFromCollections: true
 permalink: feeds/rss.xml
 ---
-<rss version="2.0">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Stalruth's Longpost Emporium</title>
     <link>https://blog.stalruth.dev</link>
+    <atom:link href="https://blog.stalruth.dev/feeds/rss.xml" rel="self" type="application/rss+xml" />
     <description>Stuart Rutherford's Longer Posts</description>
 
     <language>en-AU</language>
@@ -18,10 +19,10 @@ permalink: feeds/rss.xml
     {%- for post in collections.all reversed -%}
     <item>
       <title>{{ post.data.title }}</title>
-      <link>{{ post.url }}</link>
+      <link>https://blog.stalruth.dev{{ post.url }}</link>
       <description>{{ post.data.description }}</description>
 
-      <guid>{{ post.url }}</guid>
+      <guid>https://blog.stalruth.dev{{ post.url }}</guid>
       <pubDate>{{ post.date | dateToRfc822 }}</pubDate>
       <source url="https://blog.stalruth.dev/feeds/rss.xml">Stalruth's Longpost Emporium</source>
     </item>
