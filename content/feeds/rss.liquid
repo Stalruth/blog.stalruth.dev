@@ -21,6 +21,7 @@ permalink: feeds/rss.xml
       <title>{{ post.data.title }}</title>
       <link>https://blog.stalruth.dev{{ post.url }}</link>
       <description>{{ post.data.description }}</description>
+      <content type="html">{{ post.templateContent | escape }}</content>
 
       <guid>https://blog.stalruth.dev{{ post.url }}</guid>
       <pubDate>{{ post.date | dateToRfc822 }}</pubDate>

@@ -1,7 +1,7 @@
 :root {
   --color-link: #2222ff;
   --color-accent: #9211ee15;
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 
 a {
