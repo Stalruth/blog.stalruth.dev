@@ -6,6 +6,7 @@
 
 a {
   text-decoration: underline;
+  display: inline;
 }
 
 blockquote {
